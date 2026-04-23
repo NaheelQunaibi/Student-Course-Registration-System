@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Prerequisites</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="administrator_dashboard.html">Dashboard</a></li>
+            <li><a href="manage_courses.html">Manage Courses</a></li>
+            <li><a href="manage_prerequisites.html">Manage Prerequisites</a></li>
+            <li><a href="student_registration_overview.html">View Registrations</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <h1>Manage Prerequisties</h1>
+
+    <div>
+        <label for="select">Select Course</label>
+        <select id="select" name="select">
+            <option value="">--Select a course</option>
+        </select>
+    </div>
+
+    <div>
+        <p><strong>Current Prerequisites:</strong></p>
+        <ul>
+            <li>No prerequisites set for this course</li>
+        </ul>
+        <button>Remove Selected</button>
+    </div>
+
+    <div>
+        <p><strong>Add Prerequisite:</strong></p>
+        <select>
+            <option value="">-- Select prerequisite course --</option>
+        </select>
+        <button>Add as Prerequisite</button>
+    </div>
+
+    <div>
+        <p><strong>All Available Courses:</strong></p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

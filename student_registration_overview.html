@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration overview</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="administrator_dashboard.html">Dashboard</a></li>
+            <li><a href="manage_courses.html">Manage Courses</a></li>
+            <li><a href="manage_prerequisites.html">Manage Prerequisites</a></li>
+            <li><a href="student_registration_overview.html">View Registrations</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <h1>Student Registration overview</h1>
+
+    <div>
+        <label for="filter">Courses Filter</label>
+        <select id="filter" name="courseFilter">
+            <option value="all">All Courses</option>
+            <option value="available">Only available Seats</option>
+            <option value="full">Hide Full Courses</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="filter">Students Filter</label>
+        <select id="filter" name="studentFilter">
+            <option value="all">All Student</option>
+            <option value="available">Enrolles Students</option>
+            <option value="full">Unenrolled Students</option>
+        </select>
+    </div>
+
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Course Title</th>
+                    <th>Fegistration Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

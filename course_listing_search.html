@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Listing Search</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="student_dashboard.html">Dashboard</a></li>
+            <li><a href="course_listing_search.html">Browse & Search Courses</a></li>
+            <li><a href="my_registered_courses.html">My Registered Courses</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <h1>Browse and Search Courses</h1>
+
+    <div>
+    <label for="search">Search by code or title</label>
+    <input type="text" id="search" name="search">
+    </div>
+
+    <!-- filtters? -->
+    <div>
+        <label for="filter">Filter</label>
+        <select id="filter" name="filter">
+            <option value="all">All Courses</option>
+            <option value="available">Only available Seats</option>
+            <option value="full">Hide Full Courses</option>
+        </select>
+    </div>
+
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Title</th>
+                    <th>Credits</th>
+                    <th>Capacity</th>
+                    <th>Seats Left</th>
+                    <th>Prerequisites</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS101</td>
+                    <td>Introduction to Programming</td>
+                    <td>3</td>
+                    <td>30</td>
+                    <td>12 seats left</td>
+                    <td>None</td>
+                    <td><button>Register</button></td>
+                </tr>
+                <tr>
+                    <td>CS102</td>
+                    <td>Data Structures</td>
+                    <td>3</td>
+                    <td>25</td>
+                    <td>2 seats left</td>
+                    <td>CS101</td>
+                    <td><button>Register</button></td>
+                </tr>
+                <tr>
+                    <td>CS201</td>
+                    <td>Database Systems</td>
+                    <td>4</td>
+                    <td>20</td>
+                    <td>Full</td>
+                    <td>CS102</td>
+                    <td><button disabled>Full</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

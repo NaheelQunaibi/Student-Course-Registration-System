@@ -4,56 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrator Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <nav>
-        <ul>
-            <li><a href="administrator_dashboard.html">Dashboard</a></li>
-            <li><a href="manage_courses.html">Manage Courses</a></li>
-            <li><a href="manage_prerequisites.html">Manage Prerequisites</a></li>
-            <li><a href="student_registration_overview.html">View Registrations</a></li>
-            <li><a href="login.html">Logout</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="administrator_dashboard.html">👑 Admin Panel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="administrator_dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="manage_courses.html">Manage Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="manage_prerequisites.html">Manage Prerequisites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="student_registration_overview.html">View Registrations</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <h1>Admin Dashboard</h1>
-    <p>Welcome, Administrator</p>
+    <div class="container mt-4">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome, Administrator</p>
 
-    <div>
-        <div>
-            <strong>Total Courses</strong><br>
-            0
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card text-white bg-primary">
+                    <div class="card-body">
+                        <h6 class="card-title">Total Courses</h6>
+                        <h2 class="display-6" id="totalCourses">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-success">
+                    <div class="card-body">
+                        <h6 class="card-title">Total Students</h6>
+                        <h2 class="display-6" id="totalStudents">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-warning">
+                    <div class="card-body">
+                        <h6 class="card-title">Full Courses</h6>
+                        <h2 class="display-6" id="fullCourses">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-info">
+                    <div class="card-body">
+                        <h6 class="card-title">Available Courses</h6>
+                        <h2 class="display-6" id="availableCourses">0</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <strong>Total Students</strong><br>
-            0
-        </div>
-        <div>
-            <strong>Full Courses</strong><br>
-            0
-        </div>
-        <div>
-            <strong>Available Courses</strong><br>
-            0
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <strong>Quick Actions</strong>
+            </div>
+            <div class="card-body">
+                <a href="manage_courses.html" class="btn btn-outline-primary m-1">Add New Course</a>
+                <a href="manage_prerequisites.html" class="btn btn-outline-secondary m-1">Manage Prerequisites</a>
+                <a href="student_registration_overview.html" class="btn btn-outline-info m-1">View All Registrations</a>
+            </div>
         </div>
     </div>
 
-    <div>
-        <p><strong>Quick Actions</strong></p>
-        <div>
-            <a href="manage_courses.html">Add New Course</a>
-        </div>
-
-        <div>
-            <a href="manage_prerequisites.html">Manage Prerequisites</a>
-        </div>
-
-        <div>
-            <a href="student_registration_overview.html">View All Registrations</a>
-        </div>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
